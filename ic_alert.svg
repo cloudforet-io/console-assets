@@ -1,0 +1,6 @@
+<svg id="ic_alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic_alert-2" data-name="ic_alert" transform="translate(32 -169) rotate(90)">
+    <rect id="사각형_90" data-name="사각형 90" width="24" height="24" rx="12" transform="translate(169 8)" fill="#ef3817"/>
+    <text id="_" data-name="!" transform="translate(187 22) rotate(-90)" fill="#fff" font-size="16" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">!</tspan></text>
+  </g>
+</svg>

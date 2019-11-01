@@ -1,0 +1,6 @@
+<svg id="ic_refresh" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic_refresh-2" data-name="ic_refresh" transform="translate(32 -169) rotate(90)">
+    <rect id="사각형_90" data-name="사각형 90" width="24" height="24" transform="translate(169 8)" fill="none"/>
+    <path id="path" d="M11,4a7,7,0,0,0,0,14,7.6,7.6,0,0,0,7-5.25H16.25A6.078,6.078,0,0,1,11,16.25a5.25,5.25,0,0,1,0-10.5A4.084,4.084,0,0,1,14.5,7.5l-2.625,2.625H18V4L16.25,5.75A11.027,11.027,0,0,0,11,4Z" transform="translate(170 31) rotate(-90)" fill="#202433" fill-rule="evenodd"/>
+  </g>
+</svg>

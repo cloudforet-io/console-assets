@@ -1,0 +1,5 @@
+<svg id="ic_table_sort" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="rectangle" width="24" height="24" fill="none"/>
+  <path id="path" d="M7,10l4,4,4-4Z" transform="translate(1 4)" fill="#dcdde2" fill-rule="evenodd"/>
+  <path id="path-2" data-name="path" d="M7,13l4-4,4,4Z" transform="translate(1 -3)" fill="#dcdde2" fill-rule="evenodd"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="checkbox--checked" transform="translate(-120 -193)">
+    <rect id="rectangle" width="24" height="24" transform="translate(120 193)" fill="none"/>
+    <path id="rectangle-2" data-name="rectangle" d="M0,0H16V16H0Z" transform="translate(124 197)" fill="#0080fb" stroke="#0080fb" stroke-width="1"/>
+    <path id="path" d="M7.356,11.879,4.974,9.571,3.4,11.184l4.009,4.009L16,6.6,14.571,4.923Z" transform="translate(122.6 194.4)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

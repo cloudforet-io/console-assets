@@ -1,0 +1,6 @@
+<svg id="ic_search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic_search-2" data-name="ic_search" transform="translate(-31.65 -47.7)" opacity="0.999">
+    <rect id="square" width="24" height="24" transform="translate(31.65 47.7)" fill="none"/>
+    <path id="path" d="M45.829,60.757H45.1l-.274-.274a5.723,5.723,0,0,0,1.463-3.84,5.943,5.943,0,1,0-5.943,5.943,5.723,5.723,0,0,0,3.84-1.463l.274.274v.731L49.029,66.7,50.4,65.329Zm-5.486,0a4.114,4.114,0,1,1,4.114-4.114A4.1,4.1,0,0,1,40.343,60.757Z" transform="translate(1.25 1)" fill="#222532"/>
+  </g>
+</svg>
