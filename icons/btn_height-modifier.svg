@@ -1,0 +1,5 @@
+<svg id="btn_height-modifier" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="사각형_90" data-name="사각형 90" width="24" height="24" fill="none"/>
+  <line id="선_28" data-name="선 28" x2="24" transform="translate(0 14)" fill="none" stroke="#a7a9b2" stroke-width="1.5"/>
+  <line id="선_29" data-name="선 29" x2="24" transform="translate(24 10) rotate(180)" fill="none" stroke="#a7a9b2" stroke-width="1.5"/>
+</svg>
