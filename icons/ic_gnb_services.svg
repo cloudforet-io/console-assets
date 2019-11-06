@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><defs><style>.a{fill:none;}.b{fill:#222532;fill-rule:evenodd;}</style></defs><rect class="a" width="32" height="32" rx="2"/><g transform="translate(6 6)"><path class="b" d="M4,9H9V4H4V9Zm7.5,15h5V19h-5v5ZM4,24H9V19H4v5Zm0-7.5H9v-5H4v5Zm7.5,0h5v-5h-5v5ZM19,4V9h5V4ZM11.5,9h5V4h-5V9ZM19,16.5h5v-5H19v5ZM19,24h5V19H19v5Z" transform="translate(-4 -4)"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#222532;}
+</style>
+<path class="st0" d="M2,0h28c1.1,0,2,0.9,2,2v28c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2V2C0,0.9,0.9,0,2,0z"/>
+<g transform="translate(6 6)">
+	<path class="st1" d="M0,5h5V0H0V5z M7.5,20h5v-5h-5V20z M0,20h5v-5H0V20z M0,12.5h5v-5H0V12.5z M7.5,12.5h5v-5h-5V12.5z M15,0v5h5
+		V0H15z M7.5,5h5V0h-5V5z M15,12.5h5v-5h-5V12.5z M15,20h5v-5h-5V20z"/>
+</g>
+</svg>

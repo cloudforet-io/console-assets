@@ -1,6 +1,14 @@
-<svg id="btn_ic_tree_open-right-menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-  <rect id="사각형_359" data-name="사각형 359" width="16" height="16" fill="none"/>
-  <circle id="타원_11" data-name="타원 11" cx="1" cy="1" r="1" transform="translate(7 7)" fill="#858895"/>
-  <circle id="타원_13" data-name="타원 13" cx="1" cy="1" r="1" transform="translate(3 7)" fill="#858895"/>
-  <circle id="타원_12" data-name="타원 12" cx="1" cy="1" r="1" transform="translate(11 7)" fill="#858895"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="btn_ic_tree_open-right-menu"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16"
+	 style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#858895;}
+</style>
+<rect id="사각형_359" class="st0" width="16" height="16"/>
+<circle id="타원_11" class="st1" cx="8" cy="8" r="1"/>
+<circle id="타원_13" class="st1" cx="4" cy="8" r="1"/>
+<circle id="타원_12" class="st1" cx="12" cy="8" r="1"/>
 </svg>

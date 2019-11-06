@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><style>.a{fill:none;}.b{fill:#202433;fill-rule:evenodd;}</style></defs><g transform="translate(32 -169) rotate(90)"><rect class="a" width="24" height="24" transform="translate(169 8)"/><path class="b" d="M11,4a7,7,0,0,0,0,14,7.6,7.6,0,0,0,7-5.25H16.25A6.078,6.078,0,0,1,11,16.25a5.25,5.25,0,0,1,0-10.5A4.084,4.084,0,0,1,14.5,7.5l-2.625,2.625H18V4L16.25,5.75A11.027,11.027,0,0,0,11,4Z" transform="translate(170 31) rotate(-90)"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#202433;}
+</style>
+<g transform="translate(32 -169) rotate(90)">
+	<rect x="169" y="8" transform="matrix(2.535182e-06 1 -1 2.535182e-06 200.9995 -161)" class="st0" width="24" height="24"/>
+	<path class="st1" d="M174,20c0,3.9,3.1,7,7,7s7-3.1,7-7c-0.1-3.2-2.2-6-5.2-7v1.8c2.1,1,3.4,3,3.5,5.2c0,2.9-2.4,5.2-5.2,5.2
+		s-5.2-2.4-5.2-5.2c0-1.4,0.6-2.7,1.8-3.5l2.6,2.6V13H174l1.8,1.8C174.7,16.3,174.1,18.1,174,20z"/>
+</g>
+</svg>

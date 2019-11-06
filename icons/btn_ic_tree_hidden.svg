@@ -1,9 +1,17 @@
-<svg id="btn_ic_tree_hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-  <g id="패스_428" data-name="패스 428" fill="#fff">
-    <path d="M 8 15.5 C 3.864490032196045 15.5 0.5 12.13551044464111 0.5 8 C 0.5 3.864490032196045 3.864490032196045 0.5 8 0.5 C 12.13551044464111 0.5 15.5 3.864490032196045 15.5 8 C 15.5 12.13551044464111 12.13551044464111 15.5 8 15.5 Z" stroke="none"/>
-    <path d="M 8 1 C 4.140190124511719 1 1 4.140190124511719 1 8 C 1 11.85980987548828 4.140190124511719 15 8 15 C 11.85980987548828 15 15 11.85980987548828 15 8 C 15 4.140190124511719 11.85980987548828 1 8 1 M 8 0 C 12.41827964782715 0 16 3.581720352172852 16 8 C 16 12.41827964782715 12.41827964782715 16 8 16 C 3.581720352172852 16 0 12.41827964782715 0 8 C 0 3.581720352172852 3.581720352172852 0 8 0 Z" stroke="none" fill="#a7a9b2"/>
-  </g>
-  <g id="icon_down-arrow-small" transform="translate(11 3) rotate(90)">
-    <path id="패스_361" data-name="패스 361" d="M6.6,9.6l-4-3.971L3.637,4.6,6.6,7.541,9.563,4.6,10.6,5.629Z" transform="translate(-1.6 -3.6)" fill="#a7a9b2"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="btn_ic_tree_hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#A7A9B2;}
+</style>
+<g id="패스_428">
+	<path class="st0" d="M8,15.5c-4.1,0-7.5-3.4-7.5-7.5S3.9,0.5,8,0.5s7.5,3.4,7.5,7.5S12.1,15.5,8,15.5z"/>
+	<path class="st1" d="M8,1C4.1,1,1,4.1,1,8s3.1,7,7,7s7-3.1,7-7S11.9,1,8,1 M8,0c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S3.6,0,8,0z"
+		/>
+</g>
+<g id="icon_down-arrow-small" transform="translate(11 3) rotate(90)">
+	<path id="패스_361" class="st1" d="M5,6L1,2l1-1l3,2.9L8,1l1,1L5,6z"/>
+</g>
 </svg>
