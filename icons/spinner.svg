@@ -1,1 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><defs><clipPath id="a"><path d="M-893,107.165v-16h16v16Z" transform="translate(893 -91.165)" fill="#5541b0" stroke="#3c2c84" stroke-width="1"/></clipPath></defs><g fill="none" stroke="#a5acce" stroke-width="7"><circle cx="16" cy="16" r="16" stroke="none"/><circle cx="16" cy="16" r="12.5" fill="none"/></g><g transform="translate(16 16)" clip-path="url(#a)"><g transform="translate(-16 -16)" fill="none"><path d="M16,0A16,16,0,1,1,0,16,16,16,0,0,1,16,0Z" stroke="none"/><path d="M 16 7 C 11.03737831115723 7 7 11.03737831115723 7 16 C 7 20.96262359619141 11.03737831115723 25 16 25 C 20.96262359619141 25 25 20.96262359619141 25 16 C 25 11.03737831115723 20.96262359619141 7 16 7 M 16 0 C 24.83655548095703 0 32 7.163444519042969 32 16 C 32 24.83655548095703 24.83655548095703 32 16 32 C 7.163444519042969 32 0 24.83655548095703 0 16 C 0 7.163444519042969 7.163444519042969 0 16 0 Z" stroke="none" fill="#3c2c84"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#A5ACCE;}
+	.st2{clip-path:url(#SVGID_2_);}
+	.st3{fill:#3C2C84;}
+</style>
+<g>
+	<g>
+		<circle class="st0" cx="16" cy="16" r="16"/>
+	</g>
+	<g>
+		<path class="st1" d="M16,32C7.2,32,0,24.8,0,16S7.2,0,16,0s16,7.2,16,16S24.8,32,16,32z M16,7c-5,0-9,4-9,9c0,5,4,9,9,9
+			c5,0,9-4,9-9C25,11,21,7,16,7z"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="16" y="16" width="16" height="16"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g transform="translate(16 16)" class="st2">
+		<g transform="translate(-16 -16)">
+			<g>
+				<path class="st0" d="M16,0c8.8,0,16,7.2,16,16s-7.2,16-16,16S0,24.8,0,16S7.2,0,16,0z"/>
+			</g>
+			<g>
+				<path class="st3" d="M16,7c-5,0-9,4-9,9s4,9,9,9s9-4,9-9S21,7,16,7 M16,0c8.8,0,16,7.2,16,16s-7.2,16-16,16S0,24.8,0,16
+					S7.2,0,16,0z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
