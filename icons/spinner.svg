@@ -6,32 +6,48 @@
 	.st0{fill:none;}
 	.st1{fill:#A5ACCE;}
 	.st2{clip-path:url(#SVGID_2_);}
-	.st3{fill:#3C2C84;}
+	.st3{fill:#5541B0;}
+	.st4{clip-path:url(#SVGID_4_);}
+	.st5{fill:#3C2C84;}
 </style>
 <g>
 	<g>
 		<circle class="st0" cx="16" cy="16" r="16"/>
 	</g>
 	<g>
-		<path class="st1" d="M16,32C7.2,32,0,24.8,0,16S7.2,0,16,0s16,7.2,16,16S24.8,32,16,32z M16,7c-5,0-9,4-9,9c0,5,4,9,9,9
-			c5,0,9-4,9-9C25,11,21,7,16,7z"/>
+		<path class="st1" d="M16,32C7.2,32,0,24.8,0,16S7.2,0,16,0s16,7.2,16,16S24.8,32,16,32z M16,7c-5,0-9,4-9,9s4,9,9,9s9-4,9-9
+			S21,7,16,7z"/>
+	</g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="16" y="16" width="16" height="16"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st2">
+			<path class="st3" d="M16,32C7.2,32,0,24.8,0,16S7.2,0,16,0s16,7.2,16,16S24.8,32,16,32z M16,7c-5,0-9,4-9,9s4,9,9,9s9-4,9-9
+				S21,7,16,7z"/>
+		</g>
 	</g>
 </g>
 <g>
-	<defs>
-		<rect id="SVGID_1_" x="16" y="16" width="16" height="16"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-	</clipPath>
-	<g transform="translate(16 16)" class="st2">
-		<g transform="translate(-16 -16)">
-			<g>
-				<path class="st0" d="M16,0c8.8,0,16,7.2,16,16s-7.2,16-16,16S0,24.8,0,16S7.2,0,16,0z"/>
-			</g>
-			<g>
-				<path class="st3" d="M16,7c-5,0-9,4-9,9s4,9,9,9s9-4,9-9S21,7,16,7 M16,0c8.8,0,16,7.2,16,16s-7.2,16-16,16S0,24.8,0,16
-					S7.2,0,16,0z"/>
+	<g>
+		<defs>
+			<rect id="SVGID_3_" x="16" y="16" width="16" height="16"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+		</clipPath>
+		<g transform="translate(16 16)" class="st4">
+			<g transform="translate(-16 -16)">
+				<g>
+					<path class="st0" d="M0-16c8.8,0,16,7.2,16,16S8.8,16,0,16S-16,8.8-16,0S-8.8-16,0-16z"/>
+				</g>
+				<g>
+					<path class="st5" d="M0-9c-5,0-9,4-9,9s4,9,9,9s9-4,9-9S5-9,0-9 M0-16c8.8,0,16,7.2,16,16S8.8,16,0,16S-16,8.8-16,0
+						S-8.8-16,0-16z"/>
+				</g>
 			</g>
 		</g>
 	</g>
