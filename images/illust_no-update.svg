@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 224 496" style="enable-background:new 0 0 224 496;" xml:space="preserve">
+	 viewBox="0 0 224 206" style="enable-background:new 0 0 224 206;" xml:space="preserve">
 <style type="text/css">
 	.st0{opacity:0.4;}
 	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#A8A5CE;}
-	.st2{opacity:0.17;fill:#DCDBEC;}
+	.st2{fill:#DCDBEC;fill-opacity:0.17;}
 	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#D6D4E8;}
-	.st4{opacity:0.4;fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
-	.st5{opacity:0.6;fill:#A8A5CE;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);fill-opacity:0.4;}
+	.st5{fill:#A8A5CE;fill-opacity:0.6;}
 	.st6{fill:#FFFFFF;}
 	.st7{fill:#A8A5CE;}
-	.st8{opacity:0.5;fill:#EBEAF6;enable-background:new    ;}
-	.st9{opacity:0.5;}
+	.st8{opacity:0.5;}
 </style>
 <g class="st0">
 	<path class="st1" d="M189.1,84.9c0,42.6-34.5,77.1-77.1,77.1C69.5,162,35,127.5,35,84.9c0-42.6,34.5-77.1,77.1-77.1
 		C154.6,7.9,189.1,42.4,189.1,84.9z M112.1,160c41.5,0,75.1-33.6,75.1-75.1c0-41.5-33.6-75.1-75.1-75.1C70.6,9.9,37,43.5,37,84.9
 		C37,126.4,70.6,160,112.1,160z"/>
-	
-		<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -27.2383 104.1175)" class="st2" cx="112.1" cy="84.9" rx="75.1" ry="75.1"/>
+	<path class="st2" d="M187.1,84.9c0,41.5-33.6,75.1-75.1,75.1C70.6,160,37,126.4,37,84.9c0-41.5,33.6-75.1,75.1-75.1
+		C153.5,9.9,187.1,43.5,187.1,84.9z"/>
 	<path class="st3" d="M169.5,133.3c-13.8,16.3-34.4,26.7-57.4,26.7c-22.8,0-43.3-10.2-57.1-26.3c16.7-10.1,36.4-15.9,57.6-15.9
 		C133.5,117.8,153,123.5,169.5,133.3z"/>
 	
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="112.2412" y1="379.4993" x2="112.2412" y2="324.7953" gradientTransform="matrix(1 0 0 -1 0 497.2813)">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="112.2412" y1="89.4993" x2="112.2412" y2="34.7953" gradientTransform="matrix(1 0 0 -1 0 207.2813)">
 		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
 	</linearGradient>
@@ -94,19 +93,7 @@
 		c-0.1,0-0.1-0.2,0-0.3l2.6-0.9c0,0,0.1,0,0.1-0.1l0.8-2.6c0-0.1,0.2-0.1,0.3,0l0.9,2.5c0,0,0,0.1,0.1,0.1l2.6,0.7
 		C164.1,63.7,164.1,63.9,163.9,63.9z"/>
 </g>
-<circle class="st8" cx="10" cy="256" r="10"/>
-<rect x="32" y="250" class="st8" width="192" height="12"/>
-<rect x="32" y="272" class="st8" width="192" height="12"/>
-<rect x="32" y="296" class="st8" width="80" height="12"/>
-<circle class="st8" cx="10" cy="350" r="10"/>
-<rect x="32" y="344" class="st8" width="192" height="12"/>
-<rect x="32" y="366" class="st8" width="192" height="12"/>
-<rect x="32" y="390" class="st8" width="80" height="12"/>
-<circle class="st8" cx="10" cy="444" r="10"/>
-<rect x="32" y="438" class="st8" width="192" height="12"/>
-<rect x="32" y="460" class="st8" width="192" height="12"/>
-<rect x="32" y="484" class="st8" width="80" height="12"/>
-<g class="st9">
+<g class="st8">
 	<path class="st7" d="M71.1,200h-2.3l-8.6-13.1V200H58v-17.1h2.3l8.6,13.2v-13.2h2.2V200z M74.2,193.5c0-1.2,0.2-2.4,0.7-3.4
 		c0.5-1,1.2-1.8,2-2.3c0.9-0.5,1.9-0.8,3-0.8c1.7,0,3.1,0.6,4.2,1.8c1.1,1.2,1.6,2.8,1.6,4.8v0.2c0,1.2-0.2,2.3-0.7,3.3
 		c-0.5,1-1.1,1.7-2,2.3c-0.9,0.5-1.9,0.8-3,0.8c-1.7,0-3.1-0.6-4.2-1.8c-1.1-1.2-1.6-2.8-1.6-4.7V193.5z M76.4,193.8
