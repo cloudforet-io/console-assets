@@ -4,9 +4,10 @@
 	 y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
+	.st1{fill:#202433;}
 </style>
-<rect id="rectangle" y="0" class="st0" width="16" height="16"/>
+<rect id="rectangle" class="st0" width="16" height="16"/>
 <g id="패스_440">
-	<polygon points="11.8,9.8 5.3,9.8 5.3,3.3 6.3,3.3 6.3,8.8 11.8,8.8 	"/>
+	<polygon class="st1" points="11.8,9.8 5.3,9.8 5.3,3.3 6.3,3.3 6.3,8.8 11.8,8.8 	"/>
 </g>
 </svg>
