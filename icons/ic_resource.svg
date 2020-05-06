@@ -1,8 +1,24 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24 0H0V24H24V0Z" fill="#6638B6"/>
-<path d="M19.344 15.158V8.78102C19.3434 8.50116 19.2692 8.22639 19.1288 7.98432C18.9884 7.74225 18.7867 7.54142 18.544 7.40202L12.969 4.21402C12.7267 4.07401 12.4518 4.00031 12.172 4.00031C11.8922 4.00031 11.6173 4.07401 11.375 4.21402L5.8 7.40202C5.55734 7.54142 5.35565 7.74225 5.21522 7.98432C5.07478 8.22639 5.00056 8.50116 5 8.78102V15.158C5.00056 15.4379 5.07478 15.7126 5.21522 15.9547C5.35565 16.1968 5.55734 16.3976 5.8 16.537L11.378 19.725C11.6203 19.865 11.8952 19.9387 12.175 19.9387C12.4548 19.9387 12.7297 19.865 12.972 19.725L18.55 16.537C18.7927 16.3976 18.9944 16.1968 19.1348 15.9547C19.2752 15.7126 19.3494 15.4379 19.35 15.158H19.344Z" fill="#6638B6" stroke="white" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5.201 8.04001L12.172 11.794L19.143 8.04001" fill="#6638B6"/>
-<path d="M5.201 8.04001L12.172 11.794L19.143 8.04001" stroke="white" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12.172 19.5V12Z" fill="#6638B6"/>
-<path d="M12.172 19.5V12" stroke="white" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{opacity:0.2;fill:#FFFFFF;}
+	.st2{opacity:0.8;fill:#FFFFFF;}
+	.st3{opacity:0.5;fill:#FFFFFF;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-9.094947e-13" y1="31.9999" x2="31.9999" y2="1.964651e-12">
+	<stop  offset="0" style="stop-color:#543EA8"/>
+	<stop  offset="1" style="stop-color:#613AB2"/>
+</linearGradient>
+<rect class="st0" width="32" height="32"/>
+<g>
+	<polygon class="st1" points="16.1,10.1 21.3,13.2 21.3,19.5 23.6,20.9 23.6,11.9 16.1,7.4 	"/>
+	<polygon class="st2" points="8.5,11.9 16.1,7.4 23.6,11.9 26.1,10.4 16.1,4.4 6.1,10.4 	"/>
+	<polygon class="st3" points="10.8,19.5 10.8,13.3 16.1,10.1 16.1,7.4 8.5,11.9 8.5,20.9 	"/>
+	<polygon class="st1" points="16.1,25.4 8.5,20.9 8.5,11.9 6.1,10.4 6.1,22.4 16.1,28.4 	"/>
+	<polygon class="st2" points="21.3,19.5 16.1,22.7 10.8,19.5 8.5,20.9 16.1,25.4 23.6,20.9 	"/>
+	<polygon class="st3" points="23.6,11.9 23.6,20.9 16.1,25.4 16.1,28.4 26.1,22.4 26.1,10.4 	"/>
+</g>
 </svg>
