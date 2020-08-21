@@ -20,8 +20,6 @@ jobs:
         env:
           IMAGE_PREFIX: spaceone
           LOCATION_DOCKERFILE: .
-
-      - name: Set version
         run: |
           cat <<EOF>set_env.sh
           echo "::set-env name=SERVICE::$(cut -d'/' -f2 <<<${{github.repository}})"
