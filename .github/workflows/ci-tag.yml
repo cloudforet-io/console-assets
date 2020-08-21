@@ -33,15 +33,6 @@ jobs:
             echo "::set-env name=VERSION::${{ github.event.inputs.tag }}"
           fi
 
-          # LATEST_TAG true or false
-          if [[ $VERSION =~ ^[0-9]\.[0-9]\.[0-9]$ ]];
-          then
-            echo "::set-env name=LATEST_TAG::true"
-          else
-            echo "::set-env name=LATEST_TAG::false"
-          fi
-          EOF
-
           bash set_env.sh
 
       - name: save envs
@@ -68,7 +59,6 @@ jobs:
           bash set_env.sh
 
       - name: Upload docker
-        if: env.LATEST_TAG == 'true'
         uses: docker/build-push-action@v1
         with:
           path: ${{ env.LOCATION_DOCKERFILE }}
