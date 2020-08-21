@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - master
-      - action/tag-trigger
   workflow_dispatch:
     inputs:
       tag:
