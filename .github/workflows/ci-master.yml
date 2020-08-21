@@ -31,7 +31,6 @@ jobs:
           else
             echo "::set-env name=VERSION::${{ github.event.inputs.tag }}"
           fi
-
           EOF
 
           bash set_env.sh

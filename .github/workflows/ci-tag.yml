@@ -16,15 +16,6 @@ jobs:
       - uses: olegtarasov/get-tag@v2
         id: getTag
 
-      - name: Set version
-        run: |
-          if [ ${{ steps.getTag.outputs.tag }} ]
-          then
-            echo "::set-env name=VERSION::${{ steps.getTag.outputs.tag }}"
-          else
-            echo "::set-env name=VERSION::${{ github.event.inputs.tag }}"
-          fi
-
       - name: Set environment virables
         env:
           IMAGE_PREFIX: spaceone
@@ -34,13 +25,14 @@ jobs:
           cat <<EOF>set_env.sh
           echo "::set-env name=SERVICE::$(cut -d'/' -f2 <<<${{github.repository}})"
           echo "::set-env name=IMAGE_PREFIX::$IMAGE_PREFIX"
-
-          echo "::set-env name=LOCATION_SETUP_PY::$LOCATION_SETUP_PY"
-          echo "::set-env name=LOCATION_VERSION::$LOCATION_VERSION"
           echo "::set-env name=LOCATION_DOCKERFILE::$LOCATION_DOCKERFILE"
 
-          echo "::set-env name=VERSION::$VERSION"
-          echo $VERSION>$LOCATION_VERSION/VERSION
+          if [ ${{ steps.getTag.outputs.tag }} ]
+          then
+            echo "::set-env name=VERSION::${{ steps.getTag.outputs.tag }}"
+          else
+            echo "::set-env name=VERSION::${{ github.event.inputs.tag }}"
+          fi
 
           # LATEST_TAG true or false
           if [[ $VERSION =~ ^[0-9]\.[0-9]\.[0-9]$ ]];
