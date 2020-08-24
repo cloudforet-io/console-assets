@@ -18,6 +18,7 @@ COPY fonts ${ROOT_PATH}/fonts
 COPY icons ${ROOT_PATH}/icons
 COPY images ${ROOT_PATH}/images
 COPY loading ${ROOT_PATH}/loading
+COPY public ${ROOT_PATH}/
 COPY favicon.ico ${ROOT_PATH}/
 
 EXPOSE ${PORT}
