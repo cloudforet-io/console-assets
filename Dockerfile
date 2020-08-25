@@ -11,7 +11,6 @@ WORKDIR ${WORK_DIR}
 RUN apt-get update && rm -f /etc/nginx/sites-enabled/default \
     && mkdir -p ${LOG_PATH}/nginx
 RUN rm -rf /etc/nginx/conf.d/default.conf
-COPY pkg/nginx.conf ${NGINX_CONF_PATH}/spaceone_console_asset.conf
 
 
 COPY fonts ${ROOT_PATH}/fonts
