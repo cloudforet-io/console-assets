@@ -4,34 +4,24 @@ on:
     branches:
       - master
   workflow_dispatch:
-    inputs:
-      tag:
-        # can replace github.event.inputs.tag <=> steps.getTag.outputs.tag
-        default: 1.2.3
+
+env:
+  IMAGE_PREFIX: pyengine
+  LOCATION_DOCKERFILE: .
+
 jobs:
   initialize:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: olegtarasov/get-tag@v2
-        id: getTag
-
-      - name: Set environment virables
-        env:
-          IMAGE_PREFIX: pyengine
-          LOCATION_DOCKERFILE: .
+      - name: Set environment variables
         run: |
           cat <<EOF>set_env.sh
           echo "::set-env name=SERVICE::$(cut -d'/' -f2 <<<${{github.repository}})"
-          echo "::set-env name=IMAGE_PREFIX::$IMAGE_PREFIX"
-          echo "::set-env name=LOCATION_DOCKERFILE::$LOCATION_DOCKERFILE"
 
-          if [ ${{ steps.getTag.outputs.tag }} ]
-          then
-            echo "::set-env name=VERSION::${{ steps.getTag.outputs.tag }}"
-          else
-            echo "::set-env name=VERSION::${{ github.event.inputs.tag }}"
-          fi
+          echo "::set-env name=VERSION::$(cat $LOCATION_VERSION/VERSION).${{ github.run_id }}"
+          echo "$(cat $LOCATION_VERSION/VERSION).${{ github.run_id }}">$LOCATION_VERSION/VERSION
+          
           EOF
 
           bash set_env.sh
@@ -62,8 +52,8 @@ jobs:
       - name: Upload docker
         uses: docker/build-push-action@v1
         with:
-          path: ${{ env.LOCATION_DOCKERFILE }}
-          repository: ${{ env.IMAGE_PREFIX }}/${{ env.SERVICE }}
+          path: $LOCATION.DOCKERFILE
+          repository: $IMAGE_PREFIX/${{ env.SERVICE }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: latest,${{ env.VERSION }}
