@@ -1,4 +1,4 @@
-name: SpaceONE CI master commit push
+name: SpaceONE CI commit push
 on:
   push:
     branches:
@@ -7,57 +7,41 @@ on:
 
 env:
   IMAGE_PREFIX: pyengine
+  SERVICE: console-assets
+  LOCATION_VERSION: src # the location for VERSION file (ex- . means the location of VERSION is ./VERSION)
   LOCATION_DOCKERFILE: .
 
 jobs:
   initialize:
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.job1.outputs.VERSION }}
     steps:
       - uses: actions/checkout@v2
-      - name: Set environment variables
+      - name: calculate_version
+        id: job1
         run: |
-          cat <<EOF>set_env.sh
-          echo "::set-env name=SERVICE::$(cut -d'/' -f2 <<<${{github.repository}})"
-
-          echo "::set-env name=VERSION::$(cat $LOCATION_VERSION/VERSION).${{ github.run_id }}"
-          echo "$(cat $LOCATION_VERSION/VERSION).${{ github.run_id }}">$LOCATION_VERSION/VERSION
-          
-          EOF
-
-          bash set_env.sh
-
-      - name: save envs
-        uses: actions/upload-artifact@v2
-        with:
-          name: set_env.sh
-          path: set_env.sh
-
-      - run: |
-          cat set_env.sh
-
+          echo "::set-output name=VERSION::$(wget -q https://registry.hub.docker.com/v1/repositories/spaceone/console-assets/tags -O -  | sed -e 's/[][]//g' -e 's/"//g' -e 's/ //g' | tr '}' '\n'  | awk -F: '{print $3}' | head -2 | tail -1).${{ github.run_id }}"
   docker:
     if: github.repository_owner == 'spaceone-dev'
     needs: initialize
+    env:
+      VERSION: ${{ needs.initialize.outputs.version }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/download-artifact@v2
-        with:
-          name: set_env.sh
-
-      - name: Set environment variables
+      - name: pull docker image
         run: |
-          bash set_env.sh
-
+          docker pull ${{ env.IMAGE_PREFIX }}/${{ env.SERVICE }}
       - name: Upload docker
         uses: docker/build-push-action@v1
         with:
-          path: $LOCATION.DOCKERFILE
-          repository: $IMAGE_PREFIX/${{ env.SERVICE }}
+          path: ${{ env.LOCATION_DOCKERFILE }}
+          repository: ${{ env.IMAGE_PREFIX }}/${{ env.SERVICE }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: latest,${{ env.VERSION }}
-
+          
       - name: Slack
         if: always()
         uses: 8398a7/action-slack@v3.2.0
