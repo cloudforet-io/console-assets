@@ -20,13 +20,13 @@ jobs:
   initialize:
     runs-on: ubuntu-latest
     outputs:
-      version: ${{ steps.job1.outputs.VERSION }}
-      LATEST_TAG: ${{ steps.job1.outputs.LATEST_TAG }}
+      VERSION: ${{ steps.job1.outputs.VERSION }}
+      LATEST_TAG: ${{ steps.job2.outputs.LATEST_TAG }}
     steps:
       - uses: actions/checkout@v2
       - uses: olegtarasov/get-tag@v2
         id: getTag
-      - name: set_output
+      - name: calculate_version
         id: job1
         run: |
           if [ ${{ steps.getTag.outputs.tag }} ]
@@ -35,6 +35,11 @@ jobs:
           else
             echo "::set-output name=VERSION::${{ github.event.inputs.tag }}"
           fi
+      - name: set latest_tag
+        id: job2
+        env:
+          VERSION: ${{ steps.job1.outputs.VERSION }}
+        run: |
           # LATEST_TAG true or false
           if [[ $VERSION =~ ^[0-9]\.[0-9]\.[0-9]$ ]];
           then
@@ -42,12 +47,13 @@ jobs:
           else
             echo "::set-output name=LATEST_TAG::false"
           fi
+
   # pypi:
   #   if: github.repository_owner == 'spaceone-dev'
   #   needs: initialize
   #   runs-on: ubuntu-latest
   #   env:
-  #     version: $needs.initialize.outputs.version
+  #     version: ${{ needs.initialize.outputs.VERSION }}
   #   steps:
   #     - uses: actions/checkout@v2
   #     - name: set version
@@ -81,9 +87,9 @@ jobs:
 
   docker:
     if: github.repository_owner == 'spaceone-dev'
-    needs: initialize
+    needs: [initialize,pypi]
     env:
-      VERSION: ${{ needs.initialize.outputs.version }}
+      VERSION: ${{ needs.initialize.outputs.VERSION }}
       LATEST_TAG: ${{ needs.initialize.outputs.LATEST_TAG }}
     runs-on: ubuntu-latest
     steps:
@@ -120,9 +126,9 @@ jobs:
 
   branch:
     if: github.repository_owner == 'spaceone-dev'
-    needs: initialize
+    needs: [initialize,pypi,docker]
     env:
-      VERSION: ${{ needs.initialize.outputs.version }}
+      VERSION: ${{ needs.initialize.outputs.VERSION }}
       LATEST_TAG: ${{ needs.initialize.outputs.LATEST_TAG }}
     runs-on: ubuntu-latest
     steps:
