@@ -44,7 +44,7 @@ jobs:
       - name: update master version
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.TEST_PAT_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
           event-type: update_master_version
           client-payload: '{"version": "${{ github.event.inputs.tag }}"}'
 
@@ -95,7 +95,7 @@ jobs:
   #         twine upload dist/*.whl --username ${{ secrets.PYPI_USERNAME }} --password ${{ secrets.PYPI_PASSWORD }} --verbose
 
   docker:
-    needs: [condition_check, update_local_version_file, pypi]
+    needs: [condition_check, update_local_version_file]
     if: github.repository_owner == 'spaceone-dev'
     runs-on: ubuntu-latest
     steps:
@@ -114,7 +114,7 @@ jobs:
 
   notify_to_slack:
     if: github.repository_owner == 'spaceone-dev'
-    needs: [condition_check, update_local_version_file, pypi, docker]
+    needs: [condition_check, update_local_version_file, docker]
     runs-on: ubuntu-latest
     steps:
       - name: Slack
