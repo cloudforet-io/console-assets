@@ -145,40 +145,16 @@ jobs:
     needs: [condition_check, update_local_version_file]
     if: github.repository_owner == 'spaceone-dev'
     runs-on: ubuntu-latest
-    env:
-      VERSION: ${{ needs.condition_check.outputs.TAG }}
-      BRANCH: ${{ needs.condition_check.outputs.BRANCH }}
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: ${{ env.BRANCH }}
-          submodules: true
-      - name: versioning,determine repo
+      - name: versioning by the convetion
         run: |
-          if [[ ${{ env.VERSION }} =~ ^v[0-9]\.[0-9]\.[0-9]rc(.*)$ ]];
-            then echo "::set-env name=REPO::pyengine"
-            else echo "::set-env name=REPO::spaceone"
-          fi
-          echo "::set-env name=VERSION::$(echo ${{ env.VERSION }} | cut -c 2- | sed -e 's/-//g')"
-      - name: get service name
-        run: |
-          echo "::set-env name=SERVICE::$(echo ${{ github.repository }} | cut -c 14-)"
-      - name: build "build image" for caching
+          echo "::set-env name=VERSION::$(echo ${{ github.event.inputs.tag }} | sed -e 's/-//g')"
+      - name: Upload docker
         uses: docker/build-push-action@v1
         with:
           path: .
-          dockerfile: ./build_Dockerfile
-          repository: pyengine/build
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          tags: console
-          cache_froms: pyengine/build:${{ env.SERVICE }}
-
-      - name: Upload docker, only version tag
-        uses: docker/build-push-action@v1
-        with:
-          path: .
-          repository: ${{ env.REPO }}/${{ env.SERVICE }}
+          repository: spaceone/${{ env.SERVICE }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tags: ${{ env.VERSION }}
