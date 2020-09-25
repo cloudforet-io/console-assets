@@ -145,11 +145,16 @@ jobs:
     needs: [condition_check, update_local_version_file]
     if: github.repository_owner == 'spaceone-dev'
     runs-on: ubuntu-latest
+    env:
+      VERSION: ${{ needs.condition_check.outputs.TAG }}
     steps:
       - uses: actions/checkout@v2
       - name: versioning by the convetion
         run: |
-          echo "::set-env name=VERSION::$(echo ${{ github.event.inputs.tag }} | sed -e 's/-//g')"
+          echo "::set-env name=VERSION::$(echo ${{ env.VERSION }} | cut -c 2- | sed -e 's/-//g')"
+      - name: get service name
+        run: |
+          echo "::set-env name=SERVICE::$(echo ${{ github.repository }} | cut -c 14-)"
       - name: Upload docker
         uses: docker/build-push-action@v1
         with:
