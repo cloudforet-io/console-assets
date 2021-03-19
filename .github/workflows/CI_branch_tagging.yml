@@ -194,6 +194,7 @@ jobs:
           push: true
           tags: ${{ secrets.ECR_REPO }}/${{ env.SERVICE }}:${{ env.VERSION }}
 
+
   notify_to_slack:
     if: github.repository_owner == 'spaceone-dev'
     needs: [condition_check, update_local_version_file, docker]
