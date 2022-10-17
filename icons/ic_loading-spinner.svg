@@ -1,6 +1,6 @@
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="ic_loading-spinner">
-<circle id="loading-bg" cx="16" cy="16" r="12.8" stroke="#A7A9B2" stroke-opacity="0.3" stroke-width="3"/>
-<circle id="loading" cx="16" cy="16" r="12.8" stroke="#898995" stroke-width="3" stroke-linecap="round" stroke-dasharray="32 200"/>
+<circle id="loading-bg" cx="16" cy="16" r="14" stroke="#A7A9B2" stroke-opacity="0.3" stroke-width="9%"/>
+<circle id="loading" cx="16" cy="16" r="14" stroke="#898995" stroke-width="9%" stroke-linecap="round" stroke-dasharray="32 200"/>
 </g>
 </svg>
