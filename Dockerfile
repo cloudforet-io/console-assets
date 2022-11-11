@@ -13,11 +13,9 @@ RUN apt-get update && rm -f /etc/nginx/sites-enabled/default \
 RUN rm -rf /etc/nginx/conf.d/default.conf
 
 
-COPY fonts ${ROOT_PATH}/fonts
 COPY ["help guide", "${ROOT_PATH}/help guide"]
 COPY icons ${ROOT_PATH}/icons
 COPY images ${ROOT_PATH}/images
-COPY loading ${ROOT_PATH}/loading
 COPY lottiefiles ${ROOT_PATH}/lottiefiles
 COPY public ${ROOT_PATH}/
 
