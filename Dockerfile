@@ -15,7 +15,6 @@ RUN rm -rf /etc/nginx/conf.d/default.conf
 
 COPY icons ${ROOT_PATH}/icons
 COPY images ${ROOT_PATH}/images
-COPY lottiefiles ${ROOT_PATH}/lottiefiles
 COPY public ${ROOT_PATH}/
 
 EXPOSE ${PORT}
