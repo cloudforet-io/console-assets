@@ -1,4 +1,4 @@
-FROM nginx:1.19
+FROM nginx:1.30.1
 
 ENV PORT 80
 ENV WORK_DIR /tmp
